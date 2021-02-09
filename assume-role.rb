@@ -1,12 +1,12 @@
 class AssumeRole < Formula
   desc "Easily assume AWS roles in your terminal"
   homepage "https://github.com/remind101/assume-role"
-  url "https://github.com/remind101/assume-role/releases/download/0.3.1/assume-role"
-  version "0.3.1"
-  sha256 "59a145b6d738e18867a95c61347de443b0cae2bfedeeea56ba41897fcaaf60c2"
+  url "https://github.com/remind101/assume-role/releases/download/0.3.2/assume-role-Darwin"
+  version "0.3.2"
+  sha256 "68b74f3757bed9b21ea445974111c3b9ff73e7182370a76384942f4ca468b400"
 
   def install
-    bin.install "assume-role"
+    bin.install "assume-role-Darwin" => "assume-role"
   end
 
   test do
